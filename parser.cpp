@@ -90,7 +90,7 @@ double ExpressionParser::readDouble() {
   char c;
   bool hasDecPoint = false;
 
-  while (c = stream_.get()) {
+  while ((c = stream_.get())) {
     if (isDecimalPoint(c)) {
       if (hasDecPoint) {
 	++charsRead_;

@@ -135,9 +135,9 @@ void BinaryNode::addChild(TreeNode* node) {
 
 TreeNode* BinaryNode::popChild() {
   if (!rightChild_)
-    popChildRoutine(&leftChild_);
+    return popChildRoutine(&leftChild_);
   else
-    popChildRoutine(&rightChild_);
+    return popChildRoutine(&rightChild_);
 }
 
 double BinaryNode::evaluate() const {
