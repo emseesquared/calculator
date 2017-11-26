@@ -16,7 +16,7 @@ calc: calc.cpp tree.o parser.o exceptions.o
 	$(CXX) $< tree.o parser.o exceptions.o -o $@ $(FLAGS)
 
 test:
-	$(CXX) tests.cpp tree.o parser.o exceptions.o -o tests
+	$(CXX) tests.cpp tree.o parser.o exceptions.o -o tests $(FLAGS)
 	@echo '--- Running tests ---'
 	@./tests
 
