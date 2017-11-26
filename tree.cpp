@@ -1,3 +1,5 @@
+#include <stdexcept>
+
 #include "tree.h"
 #include "exceptions.h"
 

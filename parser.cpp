@@ -1,5 +1,7 @@
-#include "parser.h"
+#include <cstdlib>
+#include <iostream>
 
+#include "parser.h"
 #include "exceptions.h"
 
 ExpressionParser ExpressionParser::parseStream(std::istream& stream) {

@@ -1,7 +1,5 @@
 #ifndef __PARSER_H__
 #define __PARSER_H__
-
-#include <exception>
 #include <iostream>
 
 #include "tree.h"
