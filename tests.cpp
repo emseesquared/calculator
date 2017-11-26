@@ -279,6 +279,7 @@ TEST(exceptional_cases) {
   assumeResult("3 + (((1+2)*3 + 4)*5 + 6)*7", 500);
   assumeResult("1 + ( 2 *( 2.5 + 2.5 +( 3 - 2)))-  3/ 1.5", 11);
   assumeResult("-10 + (8*2.5) - (3/1,5)", 8);
+  assumeResult("(2+3)(7+1)", 40);
 }
 
 using namespace Exceptions;

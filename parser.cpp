@@ -66,7 +66,7 @@ void ExpressionParser::parseNext() {
   else if (c == '(') {
     readNextChar();
 
-    if (lastRead_ == TokenType::Operand)
+    if (lastRead_ == TokenType::Operand || lastRead_ == TokenType::Block)
       result_.insertOperator('*');
 
     ExpressionParser recParser(stream_);
